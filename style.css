@@ -1,0 +1,257 @@
+body {
+    background-color: rgba(255, 228, 196, 0.205) !important;
+    min-height: 100vh
+}
+
+.quizcard {
+    height: calc(100vh - 50px);
+    background-color: rgba(255, 228, 196, 0.205) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    background-color: rgb(26, 39, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20% !important;
+    border-radius: 20px 0px 0px 20px !important;
+}
+
+.nav-link.active,
+.nav-item.show .nav-link {
+    color: cornsilk !important;
+    background-color: rgb(26, 39, 155) !important;
+    border-left: solid 3px cornsilk !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+}
+
+.border-radius-left {
+    border-radius: 20px 0px 0px 20px !important;
+}
+
+.border-radius {
+    border-radius: 20px !important;
+    width: 950px !important;
+}
+
+.img-size {
+    width: 80px;
+}
+
+.b-bot-none {
+    border-bottom: none !important;
+}
+
+.card {
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.questioncard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 80% !important;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.flexx {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.card-body {
+    width: calc(80% - 32px);
+    flex-direction: column;
+    text-align: center;
+}
+
+.startbutton {
+    margin-bottom: 20px;
+    position: absolute;
+    top: 480px;
+    right: 200px;
+}
+
+.cardheight {
+    height: 600px;
+}
+
+.answer {
+    width: 40rem !important;
+    margin-bottom: 5px;
+    height: 70px;
+    flex-direction: row !important;
+    align-items: center;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.123);
+}
+
+.question {
+    flex: 0.4 !important;
+}
+
+.question-footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 40rem !important;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    padding-top: 10px;
+
+}
+
+.questionnumber {
+    display: flex;
+    align-items: flex-end;
+}
+
+.answer:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.answerblock {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: rgba(170, 170, 170, 0.24);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultscreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.resultbuttons {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+}
+
+.resultimg {
+    width: 120px;
+}
+
+.resultpoints {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+
+.orange {
+    color: rgba(189, 133, 28, 0.404);
+}
+
+.trophy {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 150px;
+}
+
+.card-title {
+    text-align: center;
+}
+.posi{
+    position: relative;
+}
+.progress{
+    width: 100%;
+}
+.progress-bar{
+    color: white;
+}
+.maxH{
+    max-height: 180px !important;
+}
+
+@media(max-width: 900px) {
+    .left{
+        width: 100% !important;
+        border-radius: 20px !important;
+        padding: 0 !important;
+        justify-content: flex-start;
+        max-height: 40%;
+    }
+    .quizcard{
+        height: calc(100vh - 70px) !important;
+        width: 100vw !important;
+    }
+    .cardheight{
+        height: 100% !important;
+    }
+    .nav{
+        margin-top: 1rem!important;
+    }
+    .questioncard{
+        width: 100% !important;
+    }
+    .startbutton{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .question-footer{
+        width: 100% !important;
+    }
+    .answer{
+        width: 90vw !important;
+        height: auto !important;
+    }
+    .question{
+        width: 100% !important;
+    }
+    .border-radius{
+        width: 100% !important;
+    }
+    .navbar{
+        height: 70px;
+    }
+    .card{
+        height: 100%;
+    }
+    .questioncard{
+        padding-top: 10px;
+    }
+    .autohight{
+        height: auto;
+    }
+    .question-footer{
+        padding-right: 20px;
+        padding-left: 20px;
+        position: absolute;
+        bottom: 0;
+    }
+    .mobileflex{
+        display: flex;
+        flex-direction: column;
+    }
+    .final-mobile{
+        flex-grow: 0.6;
+    }
+    .trophy{
+        top: 50%;
+        width: 70px;
+    }
+}

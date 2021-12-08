@@ -16,40 +16,33 @@
   <title>Quizapp</title>
 </head>
 
-<body onload="screensize()" onresize="screensize()">
+<body onload="init()">
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
       <span class="navbar-brand mb-0 h1">Quizapp</span>
     </div>
-    <div class="progress" id="progress" style="display: none">
-      <div class="progress-bar" role="progressbar" style="width: 0%;" id="progress-bar"></div>
-    </div>
   </nav>
 
   <div class="quizcard" id="quizcard">
-    <div class="card mb-3 border-radius posi" id="card2">
-      <div class="row g-0 cardheight border-radius mobileflex">
-        <div class="col-md-4 left" id="left">
+    <div class="card mb-3 border-radius">
+      <div class="row g-0 cardheight border-radius">
+        <div class="col-md-4 left">
           <img src="./img/logo.png" class="img-fluid rounded-start mt-4 img-size">
-          <ul class="nav flex-column nav-tabs mt-5 mb-3 b-bot-none" id="link-list">
+          <ul class="nav flex-column nav-tabs mt-5 mb-3 b-bot-none">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#" id="quizlink1"
-                onclick="load(0)">Zocker-Sprache</a>
+              <a class="nav-link active" aria-current="page" href="#">Zocker-Sprache</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="quizlink2" onclick="load(1)">Programmier-Quiz</a>
+              <a class="nav-link" href="#">Programmier-Quiz</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="quizlink3" onclick="load(2)">Computerquiz</a>
+              <a class="nav-link" href="#">Computerquiz</a>
             </li>
           </ul>
         </div>
+        <div class="col-md-8 questioncard" id="question-side">
 
-
-
-        <div class="col-md-8 questioncard padding-left-right autohight" id="quiz1">
-
-          <div class="resultscreen" id="endScreen" style="display: none">
+          <div class="resultscreen" id="endScreen" style="display: none;">
             <img src="./img/brain result.png" class="resultimg">
             <h3>Complete Quiz</h3>
             <div class="resultpoints">
@@ -66,26 +59,14 @@
             </div>
           </div>
 
-          <div class="card-body flexx" id="welcomescreen">
-            <div class="card-body flexx">
-              <h5 class="card-title mb-4" id="welcome">Wilkommen auf der Quizapp</h5>
-              <p class="card-text" id="card-text">Wähle Links ein Quiz aus</p>
-              <div class="startbutton" id="startbutton">
-                
-              </div>
-            </div>
 
-          </div>
-
-
-          <div id="questionbody" class="questioncard" style="display: none">
-            
+          <div id="questionbody" class="questioncard">
             <div class="card-body flexx question">
               <h5 class="question" id="questiontext"> Frage </h5>
 
             </div>
             <div>
-              <div class="answer">
+              <div class="card answer">
                 <div class="answerblock" id="answerblock_1">
                   A
                 </div>
@@ -93,7 +74,7 @@
                   Antwort
                 </div>
               </div>
-              <div class="answer">
+              <div class="card answer">
                 <div class="answerblock" id="answerblock_2">
                   B
                 </div>
@@ -101,7 +82,7 @@
                   Antwort
                 </div>
               </div>
-              <div class="answer">
+              <div class="card answer">
                 <div class="answerblock" id="answerblock_3">
                   C
                 </div>
@@ -109,7 +90,7 @@
                   Anntwort
                 </div>
               </div>
-              <div class="answer">
+              <div class="card answer">
                 <div class="answerblock" id="answerblock_4">
                   D
                 </div>
@@ -118,7 +99,6 @@
                 </div>
               </div>
             </div>
-            
             <div class="question-footer">
               <span class="questionnumber">
                 <b id="questionnumber">1</b>von<b id="quizlength">5</b>Fragen
@@ -127,10 +107,10 @@
                 Frage</button>
             </div>
           </div>
-
         </div>
       </div>
     </div>
+  </div>
   </div>
 </body>
 
